@@ -65,15 +65,15 @@ class TransitionButton: UIControl {
     getStatusKey(s1: .plusIcon, s2: .crossIcon, status: .crossIcon, path: .path1) : (start: 0.825, end: 0.975),
     getStatusKey(s1: .plusIcon, s2: .crossIcon, status: .crossIcon, path: .path2) : (start: 0.825, end: 0.975),
     // .plusIcon + .leftArrow 的一组
-    getStatusKey(s1: .plusIcon, s2: .leftArrow, status: .plusIcon, path: .path1) : (start: 0.030, end: 0.210),
-    getStatusKey(s1: .plusIcon, s2: .leftArrow, status: .plusIcon, path: .path2) : (start: 0.034, end: 0.234),
-    getStatusKey(s1: .plusIcon, s2: .leftArrow, status: .leftArrow, path: .path1) : (start: 0.899, end: 1),
-    getStatusKey(s1: .plusIcon, s2: .leftArrow, status: .leftArrow, path: .path2) : (start: 0.888, end: 1),
+    getStatusKey(s1: .plusIcon, s2: .leftArrow, status: .plusIcon, path: .path1) : (start: 0.029, end: 0.206),
+    getStatusKey(s1: .plusIcon, s2: .leftArrow, status: .plusIcon, path: .path2) : (start: 0.032, end: 0.226),
+    getStatusKey(s1: .plusIcon, s2: .leftArrow, status: .leftArrow, path: .path1) : (start: 0.882, end: 1),
+    getStatusKey(s1: .plusIcon, s2: .leftArrow, status: .leftArrow, path: .path2) : (start: 0.869, end: 1),
     // .crossIcon + .leftArrow 的一组
-    getStatusKey(s1: .crossIcon, s2: .leftArrow, status: .crossIcon, path: .path1) : (start: 0.031, end: 0.216),
-    getStatusKey(s1: .crossIcon, s2: .leftArrow, status: .crossIcon, path: .path2) : (start: 0.028, end: 0.196),
-    getStatusKey(s1: .crossIcon, s2: .leftArrow, status: .leftArrow, path: .path1) : (start: 0.897, end: 1),
-    getStatusKey(s1: .crossIcon, s2: .leftArrow, status: .leftArrow, path: .path2) : (start: 0.906, end: 1)
+    getStatusKey(s1: .crossIcon, s2: .leftArrow, status: .crossIcon, path: .path1) : (start: 0.030, end: 0.211),
+    getStatusKey(s1: .crossIcon, s2: .leftArrow, status: .crossIcon, path: .path2) : (start: 0.028, end: 0.192),
+    getStatusKey(s1: .crossIcon, s2: .leftArrow, status: .leftArrow, path: .path1) : (start: 0.878, end: 1),
+    getStatusKey(s1: .crossIcon, s2: .leftArrow, status: .leftArrow, path: .path2) : (start: 0.889, end: 1)
   ]
   
   let pathPlusIconAndCrossIcon1:CGPath = {
@@ -111,8 +111,8 @@ class TransitionButton: UIControl {
     path.addCurve(to: CGPoint(x: 0, y: 15), control1: CGPoint(x: 6.72, y: 30), control2: CGPoint(x: 0, y: 23.28))
     path.addCurve(to: CGPoint(x: 15, y: 0), control1: CGPoint(x: 0, y: 6.72), control2: CGPoint(x: 6.72, y: 0))
     path.addCurve(to: CGPoint(x: 30, y: 15), control1: CGPoint(x: 23.28, y: 0), control2: CGPoint(x: 30, y: 6.72))
-    path.addCurve(to: CGPoint(x: 18.44, y: 29.6), control1: CGPoint(x: 30, y: 22.1), control2: CGPoint(x: 25.07, y: 28.05))
-    path.addLine(to: CGPoint(x: 10, y: 15))
+    path.addCurve(to: CGPoint(x: 19.37, y: 29.36), control1: CGPoint(x: 30, y: 21.76), control2: CGPoint(x: 25.52, y: 27.49))
+    path.addLine(to: CGPoint(x: 5, y: 15))
     return path
   }()
   let pathPlusIconAndLeftArrow2:CGPath = {
@@ -123,8 +123,8 @@ class TransitionButton: UIControl {
     path.addCurve(to: CGPoint(x: 15, y: 30), control1: CGPoint(x: 30, y: 23.28), control2: CGPoint(x: 23.28, y: 30))
     path.addCurve(to: CGPoint(x: 0, y: 15), control1: CGPoint(x: 6.72, y: 30), control2: CGPoint(x: 0, y: 23.28))
     path.addCurve(to: CGPoint(x: 15, y: 0), control1: CGPoint(x: 0, y: 6.72), control2: CGPoint(x: 6.72, y: 0))
-    path.addCurve(to: CGPoint(x: 18.44, y: 0.4), control1: CGPoint(x: 16.19, y: 0), control2: CGPoint(x: 17.33, y: 0.14))
-    path.addLine(to: CGPoint(x: 10, y: 15))
+    path.addCurve(to: CGPoint(x: 19.37, y: 0.64), control1: CGPoint(x: 16.52, y: 0), control2: CGPoint(x: 17.99, y: 0.22))
+    path.addLine(to: CGPoint(x: 5, y: 15))
     return path
   }()
 
@@ -137,8 +137,8 @@ class TransitionButton: UIControl {
     path.addCurve(to: CGPoint(x: 15, y: 30), control1: CGPoint(x: 30, y: 23.28), control2: CGPoint(x: 23.28, y: 30))
     path.addCurve(to: CGPoint(x: 0, y: 15), control1: CGPoint(x: 6.72, y: 30), control2: CGPoint(x: 0, y: 23.28))
     path.addCurve(to: CGPoint(x: 15, y: 0), control1: CGPoint(x: 0, y: 6.72), control2: CGPoint(x: 6.72, y: 0))
-    path.addCurve(to: CGPoint(x: 18.44, y: 0.38), control1: CGPoint(x: 16.18, y: 0), control2: CGPoint(x: 17.34, y: 0.12))
-    path.addLine(to: CGPoint(x: 10, y: 15))
+    path.addCurve(to: CGPoint(x: 19.37, y: 0.63), control1: CGPoint(x: 16.52, y: 0), control2: CGPoint(x: 17.99, y: 0.21))
+    path.addLine(to: CGPoint(x: 5, y: 15))
     return path
   }()
   let pathCrossIconAndLeftArrow2:CGPath = {
@@ -150,8 +150,8 @@ class TransitionButton: UIControl {
     path.addCurve(to: CGPoint(x: 0, y: 15), control1: CGPoint(x: 6.72, y: 30), control2: CGPoint(x: 0, y: 23.28))
     path.addCurve(to: CGPoint(x: 15, y: 0), control1: CGPoint(x: 0, y: 6.72), control2: CGPoint(x: 6.72, y: 0))
     path.addCurve(to: CGPoint(x: 30, y: 15), control1: CGPoint(x: 23.28, y: 0), control2: CGPoint(x: 30, y: 6.72))
-    path.addCurve(to: CGPoint(x: 18.44, y: 29.62), control1: CGPoint(x: 30, y: 22.1), control2: CGPoint(x: 25.06, y: 28.06))
-    path.addLine(to: CGPoint(x: 10, y: 15))
+    path.addCurve(to: CGPoint(x: 19.37, y: 29.37), control1: CGPoint(x: 30, y: 21.77), control2: CGPoint(x: 25.53, y: 27.5))
+    path.addLine(to: CGPoint(x: 5, y: 15))
     return path
   }()
 
