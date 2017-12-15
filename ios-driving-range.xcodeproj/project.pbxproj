@@ -17,6 +17,7 @@
 		3C6713B61FCCA14C00C8C375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6713AE1FCCA14C00C8C375 /* AppDelegate.swift */; };
 		3C8671AE1FA2D69400F4D6FD /* ios_driving_rangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8671AD1FA2D69400F4D6FD /* ios_driving_rangeTests.swift */; };
 		3C8671B91FA2D69400F4D6FD /* ios_driving_rangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8671B81FA2D69400F4D6FD /* ios_driving_rangeUITests.swift */; };
+		3C88BE581FE3E91D00478979 /* CollectionViewTransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88BE571FE3E91D00478979 /* CollectionViewTransitionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		3C8671B41FA2D69400F4D6FD /* ios-driving-rangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-driving-rangeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8671B81FA2D69400F4D6FD /* ios_driving_rangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_driving_rangeUITests.swift; sourceTree = "<group>"; };
 		3C8671BA1FA2D69400F4D6FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C88BE571FE3E91D00478979 /* CollectionViewTransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTransitionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,14 +81,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C6713A21FCCA14B00C8C375 /* ExampleControllers */ = {
-			isa = PBXGroup;
-			children = (
-				3C6713A31FCCA14B00C8C375 /* TransitionButtonVC.swift */,
-			);
-			path = ExampleControllers;
-			sourceTree = "<group>";
-		};
 		3C6713A41FCCA14B00C8C375 /* OtherFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +94,7 @@
 		3C6713A91FCCA14B00C8C375 /* TransitionButton */ = {
 			isa = PBXGroup;
 			children = (
+				3C6713A31FCCA14B00C8C375 /* TransitionButtonVC.swift */,
 				3C6713AA1FCCA14B00C8C375 /* TransitionButton.swift */,
 				3C6713AB1FCCA14B00C8C375 /* button_icons.pcvd */,
 			);
@@ -139,8 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				3C6713AC1FCCA14C00C8C375 /* AppLaunch */,
-				3C6713A21FCCA14B00C8C375 /* ExampleControllers */,
 				3C6713A91FCCA14B00C8C375 /* TransitionButton */,
+				3C88BE541FE3E88000478979 /* CollectionViewTransition */,
 				3C6713A41FCCA14B00C8C375 /* OtherFiles */,
 			);
 			path = "ios-driving-range";
@@ -162,6 +157,14 @@
 				3C8671BA1FA2D69400F4D6FD /* Info.plist */,
 			);
 			path = "ios-driving-rangeUITests";
+			sourceTree = "<group>";
+		};
+		3C88BE541FE3E88000478979 /* CollectionViewTransition */ = {
+			isa = PBXGroup;
+			children = (
+				3C88BE571FE3E91D00478979 /* CollectionViewTransitionVC.swift */,
+			);
+			path = CollectionViewTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +304,7 @@
 			files = (
 				3C6713B61FCCA14C00C8C375 /* AppDelegate.swift in Sources */,
 				3C6713B31FCCA14C00C8C375 /* TransitionButton.swift in Sources */,
+				3C88BE581FE3E91D00478979 /* CollectionViewTransitionVC.swift in Sources */,
 				3C6713AF1FCCA14C00C8C375 /* TransitionButtonVC.swift in Sources */,
 				3C6713B51FCCA14C00C8C375 /* RootController.swift in Sources */,
 			);

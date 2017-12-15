@@ -9,8 +9,9 @@
 import UIKit
 
 class RootController: UITableViewController {
-  let dataArr = [
-    (name:"Transition Button", intro:"利用 PaintCode 软件制作 CAShapeLayer 的 CGPath, 再通过 CoreAnimation 动画修改 CGPath 的 strokeStart, strokeEnd 来实现按钮动画效果", typeVC:TransitionButtonVC.self),
+  let dataArr:[(title:String, intro:String, typeVC:UIViewController.Type)] = [
+    (title:"Transition Button", intro:"利用 PaintCode 软件制作 CAShapeLayer 的 CGPath, 再通过 CoreAnimation 动画修改 CGPath 的 strokeStart, strokeEnd 来实现按钮动画效果", typeVC:TransitionButtonVC.self),
+    (title:"Collection Transition", intro:"自定义 TransitionLayout 来协助 CollectionView 切换两个方向相反的 FlowLayout. 并在切换 Layout 的过渡过程中加入了好看流畅的弹性动画", typeVC:CollectionViewTransitionVC.self),
   ]
   
   override func viewDidLoad() {
@@ -38,7 +39,7 @@ extension RootController {
     }
 
     let data = dataArr[indexPath.row]
-    cell.textLabel?.text = data.name
+    cell.textLabel?.text = data.title
     cell.detailTextLabel?.text = data.intro
     return cell
   }
@@ -46,7 +47,7 @@ extension RootController {
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let data = dataArr[indexPath.row]
     let controller = data.typeVC.init()
-    controller.title = data.name
+    controller.title = data.title
     self.navigationController?.pushViewController(controller, animated: true)
   }
 }
